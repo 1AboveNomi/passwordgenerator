@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator & Name Processing</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Logo -->
+        <img src="logo.webp" alt="Logo" class="logo">
+        
+        <!-- Title -->
+        <h1>Password Generator</h1>
+
+        <!-- Password Field -->
+        <input type="text" id="passwordField" readonly placeholder="Your password will appear here">
+        <button id="generateBtn">Generate password + copy to clipboard</button>
+
+        <!-- Name Processing -->
+        <h1>Name Processing</h1>
+
+        <!-- Name Input Field -->
+        <input type="text" id="nameInput" placeholder="Paste name here">
+
+        <!-- Results -->
+        <div>
+            <label for="initialsField">Initials: </label>
+            <input type="text" id="initialsField" readonly>
+            <button class="copyBtn" data-copy-target="initialsField">Copy</button>
+        </div>
+        <div>
+            <label for="loginField">Login: </label>
+            <input type="text" id="loginField" readonly>
+            <button class="copyBtn" data-copy-target="loginField">Copy</button>
+        </div>
+        <div>
+            <label for="firstNameField">First Name: </label>
+            <input type="text" id="firstNameField" readonly>
+            <button class="copyBtn" data-copy-target="firstNameField">Copy</button>
+        </div>
+        <div>
+            <label for="lastNameField">Last Name: </label>
+            <input type="text" id="lastNameField" readonly>
+            <button class="copyBtn" data-copy-target="lastNameField">Copy</button>
+        </div>
+
+        <!-- Dark Mode Switch -->
+        <div class="mode-switch">
+            <label class="switch">
+                <input type="checkbox" id="themeToggle">
+                <span class="slider round"></span>
+            </label>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
